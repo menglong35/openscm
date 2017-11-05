@@ -1,9 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSCM.ClientService.core", "OpenSCM.ClientService.core\OpenSCM.ClientService.core.csproj", "{D13F33BA-D576-4206-9FA5-01A8D5635E78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSCM.ClientService.core", "OpenSCM.ClientService.core\OpenSCM.ClientService.core.csproj", "{D13F33BA-D576-4206-9FA5-01A8D5635E78}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSCM.ClientService.start", "OpenSCM.ClientService.start\OpenSCM.ClientService.start.csproj", "{9AE867EC-CC37-4C93-AE8C-495F8EB6CCA4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSCM.ClientService.AutoUpdate", "OpenSCM.ClientService.AutoUpdate\OpenSCM.ClientService.AutoUpdate.csproj", "{D3FF72E3-1462-4766-A1BD-2CBAD425BD5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSCM.ClientService.shell", "OpenSCM.ClientService.shell\OpenSCM.ClientService.shell.csproj", "{6BF0F7D0-F5AB-4443-ABE9-F307A20B4D30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSCM.ClientService.web", "OpenSCM.ClientService.web\OpenSCM.ClientService.web.csproj", "{B66F38E7-78F5-4644-A5FB-EE5E191796E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +23,27 @@ Global
 		{D13F33BA-D576-4206-9FA5-01A8D5635E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D13F33BA-D576-4206-9FA5-01A8D5635E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D13F33BA-D576-4206-9FA5-01A8D5635E78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AE867EC-CC37-4C93-AE8C-495F8EB6CCA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AE867EC-CC37-4C93-AE8C-495F8EB6CCA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AE867EC-CC37-4C93-AE8C-495F8EB6CCA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AE867EC-CC37-4C93-AE8C-495F8EB6CCA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3FF72E3-1462-4766-A1BD-2CBAD425BD5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3FF72E3-1462-4766-A1BD-2CBAD425BD5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3FF72E3-1462-4766-A1BD-2CBAD425BD5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3FF72E3-1462-4766-A1BD-2CBAD425BD5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BF0F7D0-F5AB-4443-ABE9-F307A20B4D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BF0F7D0-F5AB-4443-ABE9-F307A20B4D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BF0F7D0-F5AB-4443-ABE9-F307A20B4D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BF0F7D0-F5AB-4443-ABE9-F307A20B4D30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B66F38E7-78F5-4644-A5FB-EE5E191796E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B66F38E7-78F5-4644-A5FB-EE5E191796E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B66F38E7-78F5-4644-A5FB-EE5E191796E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B66F38E7-78F5-4644-A5FB-EE5E191796E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E2564E9-1DFA-4392-A614-F882803CCBCE}
 	EndGlobalSection
 EndGlobal
