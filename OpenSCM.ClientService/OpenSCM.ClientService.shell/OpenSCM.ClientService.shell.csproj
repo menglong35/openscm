@@ -4,25 +4,26 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{595511D0-FCF5-4DBB-886A-52CF6F959DB7}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OpenSCM.ClientService.Core</RootNamespace>
-    <AssemblyName>OpenSCM.ClientService.Core</AssemblyName>
+    <ProjectGuid>{FB92E65D-D018-479B-89B5-A235012016BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OpenSCM.ClientService.shell</RootNamespace>
+    <AssemblyName>OpenSCM.ClientService.shell</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\export\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -67,38 +68,27 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CommonServiceLocator, Version=2.0.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.1.0\lib\net40\CommonServiceLocator.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml" />
-    <Reference Include="Unity.Abstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.1.0\lib\net40\Unity.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Container, Version=5.1.0.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.1.0\lib\net40\Unity.Container.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Interception, Version=5.0.3.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.1.0\lib\net40\Unity.Interception.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ServiceLocation, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.1.0\lib\net40\Unity.ServiceLocation.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IUContainerService.cs" />
-    <Compile Include="IUServiceProvider.cs" />
+    <Compile Include="Service1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service1.Designer.cs">
+      <DependentUpon>Service1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UServiceProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

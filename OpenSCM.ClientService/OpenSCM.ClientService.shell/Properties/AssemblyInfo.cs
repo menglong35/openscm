@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("OpenSCM.ClientService.start")]
+[assembly: AssemblyTitle("OpenSCM.ClientService.shell")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OpenSCM.ClientService.start")]
+[assembly: AssemblyProduct("OpenSCM.ClientService.shell")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("be2a2204-ff13-4421-87aa-50080f29bdac")]
+[assembly: Guid("fb92e65d-d018-479b-89b5-a235012016ba")]
 
 // 程序集的版本信息由下列四个值组成: 
 //
@@ -30,7 +30,7 @@ using System.Runtime.InteropServices;
 //      修订号
 //
 // 可以指定所有值，也可以使用以下所示的 "*" 预置版本号和修订号
-//通过使用 "*"，如下所示:
+// 方法是按如下所示使用“*”: :
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
