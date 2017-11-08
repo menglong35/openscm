@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OpenSCM.ClientService.AutoUpdate
+namespace OpenSCM.ClientService.Application
 {
     public class Class1
     {
