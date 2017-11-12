@@ -10,9 +10,7 @@ namespace OpenSCM.ClientService.Application
 {
     public class CSApplication
     {
-        private IUServiceProvider _container;
-
-       
+        private IUServiceProvider _container;       
 
         public void Start()
         {

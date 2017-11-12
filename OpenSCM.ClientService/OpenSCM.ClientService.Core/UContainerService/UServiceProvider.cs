@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Unity;
+using Unity.Lifetime;
 using Unity.Resolution;
 
 namespace OpenSCM.ClientService.Core
@@ -43,6 +44,22 @@ namespace OpenSCM.ClientService.Core
         {
             _container.RegisterType<TInterface, T>();
         }
+
+
+        public void AddSingletonService<TInterface, T>() where T : TInterface
+        {
+            _container.RegisterType<TInterface, T>(new ContainerControlledLifetimeManager());
+        }
+        //public void AddSingletonInstanceService(Type t, object instance)
+        //{
+        //    _container.RegisterInstance(t, instance, new ContainerControlledLifetimeManager());
+        //}
+        public void AddInstanceService<TInterface>(TInterface instance)
+        {
+            _container.RegisterInstance<TInterface>( instance);
+        }
+
+
 
         public void RemoveService<TInterface, T>() where T : TInterface
         {
