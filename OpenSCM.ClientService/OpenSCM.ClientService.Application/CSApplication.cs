@@ -10,7 +10,8 @@ namespace OpenSCM.ClientService.Application
 {
     public class CSApplication
     {
-        private IUServiceProvider _container;       
+        private IUServiceProvider _container;
+        private const string LogFileName = "OpenScmClientAppilication";
 
         public void Start()
         {
@@ -20,18 +21,22 @@ namespace OpenSCM.ClientService.Application
 
         private void StartServices()
         {
-            _container.GetService<ITest2>().SayHello();
-
+            
         }
 
         private void InitApplication()
         {
+            ILogService log = new LogService();
+            log.LogOperation(LogFileName,"Begin Load Defalut Service");
+
             _container = new UServiceProvider();
             IUContainerService interContainer = (IUContainerService)_container;
+            interContainer.AddInstanceService<ILogService>(log);
 
+            interContainer.AddSingletonService<IProgramUpdateService, ProgramUpdateService>();
 
-            interContainer.AddService<Itest, test>();
-            interContainer.AddService<ITest2, Test2>();
+            interContainer.AddSingletonService<ITaskDispatchServiceContainer, TaskDispatchServiceContainer>();
+
         }
 
         /// <summary>

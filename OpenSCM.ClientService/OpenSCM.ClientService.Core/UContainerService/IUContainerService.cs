@@ -16,7 +16,7 @@ namespace OpenSCM.ClientService.Core
 
         //void AddSingletonInstanceService(Type t, object instance);
 
-        void AddInstanceService<TInterface>(TInterface instance)
+        void AddInstanceService<TInterface>(TInterface instance);
 
         void Dispose();
     }
